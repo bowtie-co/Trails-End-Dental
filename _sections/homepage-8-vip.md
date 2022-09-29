@@ -1,0 +1,43 @@
+---
+location: 'homepage'
+head:
+  title:
+  subtitle:
+style:
+  id: ''
+  class: 'dark'
+  media:
+    img_path:
+      url_path:
+      pattern: false
+      parallax: false
+      overlay: light
+      blur: false
+    video:
+      url_path:
+      type:
+    slides:
+
+  tint_color: null
+  font_color: '#000'
+
+---
+
+
+<h2 class="title text-center"><span class="underlined">Join Our VIP Program</span></h2>
+<div class="row d-flex align-items-center justify-content-center">
+  <div class="col-md-6 text-left">
+    <h5 class="">Are you a patient of our practice without dental insurance? Then join our VIP Program, taking care of your preventive care with a monthly subscription, and save money today!</h5><br/>
+    <a href="https://trails-end-dental.illumitrac.com" target="_blank"><button type="button" class="request-button light">Sign Up</button></a>
+  </div>
+  <div class="col-md-6">
+    <link rel="stylesheet" type="text/css" href="/css/components/testimonials.css"/>
+      <div id="office-slider-noslide" class="">
+        <div class="">
+          <a href="https://trails-end-dental.illumitrac.com" target="_blank">
+            <img data-src="/images/trails-end-brochure.jpg" alt="VIP Club" style="max-height:400px;">
+          </a>
+        </div>
+      </div>
+  </div>
+</div>

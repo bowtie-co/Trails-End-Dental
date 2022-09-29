@@ -1,0 +1,129 @@
+# Site settings
+title: Trails End Dental, Cosmetic and Family Dentistry, Dr. Douglas Retzlaff, DMD. Serving Oregon City, OR and surrounding areas.
+description: Providing dentistry in a relaxed and family-friendly environment since 1990, Dr. Doug Retzlaff provides family and cosmetic dentistry for patients in Oregon City and surrounding areas. Our purpose is to provide quality dental care in a happy environment that promotes the well-being of our patients, staff, and community. You can always count on a comfortable experience and a warm welcome and a smile!
+email: "info@trailsenddental.com"  # e.g. admin@asird.org
+experience: 25
+
+url: https://www.trailsenddental.com/
+logourl:  /img/logo.png # Your logo or avatar files
+navlogourl: /img/logo.png # Your logo or avatar files
+footer_logourl: '/img/logo.png'
+vertical_logourl:  # logo used in footer
+bg-tile:
+tos-link:
+
+authedurl: # should be blank or '/' unless customized for use with the bowtie-auth.js pswd protection
+
+stagingurl:
+productionurl:
+
+author:
+author_thumbnail:  # default author avatar
+
+# Theme additions - please update the default values if you intend to use these variables
+
+google_analytics_id:  '' # Your google analytics ID (e.g. 'UA-XXXXXXXX-X')
+google_api_key: AIzaSyCWwI6hxOqcIqYZOoVcmiCNK6Zm4uBR0CI
+sumoid:  # e.g. 'b8fe3b113e8eff21df4c245af51b205fc3a7ff5ab889892be1e98f4a50cd94a6'
+
+doctor:
+  name: Douglas Retzlaff, DMD
+  practicename: Trails End Dental <br/>Douglas Retzlaff, DMD, PC
+  practicetagline: Over 20 years of experience.
+  intro: "Dr. Retzlaff was born in Canada but his family moved to southwest Portland while he was in elementary school and considers himself a native Oregonian. As a second generation dentist, he treats his patients the way he wants to be treated and stresses building patient relationships to fulfill and maintain healthy smiles. Dr. Retzlaff established his Oregon City practice 25 years ago and most enjoys the restorative and cosmetic aspect of dentistry. He is excited about implant dentistry's possibilities for his patients with missing teeth and their opportunities for restored dental function."
+  profile_img: /master_bio_images\oregon-city\Dr_Retzlaff_OurTeam.png
+  education: "<p><strong>Doctor of Medical Dentistry  </strong></p><p>Oregon Health Sciences University  </p><p><strong>Bachelor of Science in Biology  </strong></p><p>Portland State University </p>"
+  contact:
+    company:  "Trails End Dental"
+    address: "1104 Molalla Ave."
+    city: "Oregon City"
+    state: "OR"
+    zip: "97045"
+    country:  "USA"
+    phone:  (503) 656-7131  # e.g.  754-307-6990
+    fax: (503) 656-6382
+    latlng: 45.339636, -122.593283
+    twitter:               # (e.g. 'https://twitter.com/twitter')
+    facebook:  'https://www.facebook.com/trailsenddental/'         # (e.g. 'https://facebook.com/facebook')
+    yelp: 'https://www.yelp.com/biz/doug-retzlaff-dmd-pc-oregon-city'
+    google_reviews: 'https://goo.gl/maps/8p74eVc672S2'
+    healthgrades: 'https://www.healthgrades.com/dentist/dr-douglas-retzlaff-y3jn8'
+    linkedin:                     # (e.g. 'https://linkedin/company/linkedin')
+    youtube:                        # (e.g. 'https://youttube.com/channel/UCovWO5keLOLcLu8WdO-ABJw')
+
+  disqus_id:           # From your Disqus account (e.g. 'bowtieexample')
+
+  addthis_id:  ''       # From your Add This account (e.g. 'ra-00000a0a00a00aaa')
+
+# Permalinks
+permalink:           /:categories/:title/
+relative_permalinks: false
+
+#gems: [jekyll-paginate]
+
+# Pagination config
+#paginate: 5
+#paginate_path: /page/:num
+
+
+#toggle future post dates back on
+future: true
+
+#compress sass
+sass:
+  style: compressed
+
+# Jekyll build/resource locations
+
+# source:  .
+# destination: ./_site
+# plugins_dir: null
+# layouts_dir: ./_layouts
+# data_dir:    ./_data
+# includes_dir: ./_includes
+
+# Jekyll Handling Reading
+include:    [] # Specify files to be included in build that may be otherwise ignored (e.g. '[.htaccess]')
+
+keep_files: [] # Files/Folders located inside the ./_site folder to be retained on build (e.g.'[.git, .svn]')
+
+# Files/Folders to be excluded from generated '_site' folder
+exclude:
+  - .gitignore
+  - .sass-cache
+
+# define collection objects
+collections:
+  sections:
+    output: true
+    permalink: /sections/:path/
+  hero-slides:
+    output: false
+  office-slides:
+    output: false
+  procedures:
+    output: true
+  procedure-categories:
+    output: true
+  gallery:
+    output: false
+  reviews:
+    output: false
+  team:
+    output: false
+  patient-docs:
+    output: false
+
+defaults:
+  - scope:
+      type: procedure-categories
+    values:
+      layout: procedure-categories
+  - scope:
+      type: pages
+    values:
+      noindex: true
+  - scope:
+      type: procedures
+    values:
+      layout: procedure
