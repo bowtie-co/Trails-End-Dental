@@ -1,7 +1,7 @@
 ---
 name: Cindy
 title: Dental Hygienist
-img_path: /upload/image/jpeg/1570150180623_img_path_cindy.jpg
+img_path: /images/Cindy-new_sm.jpg
 
 ---
 

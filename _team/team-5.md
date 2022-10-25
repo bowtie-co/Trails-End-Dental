@@ -1,7 +1,7 @@
 ---
 name: Marla
 title: Dental Assistant
-img_path: /images/marla.jpg
+img_path: /images/marla_sm.jpg
 
 ---
 

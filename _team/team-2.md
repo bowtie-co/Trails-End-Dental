@@ -1,7 +1,7 @@
 ---
 name: Robyn Robertson
 title: Scheduling Coordinator
-img_path: /images/robyn.jpg
+img_path: /images/robyn-new_sm.jpg
 
 ---
 <p>Robyn started her dental career 25 years ago as a chairside assistant. Her work experience includes a periodontal office, orthodontic offices and general dentistry. Although she started as an assistant, she found herself enjoying the front office and has worked as a patient care coordinator as well as a scheduling coordinator.</p>

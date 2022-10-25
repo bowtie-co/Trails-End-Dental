@@ -7,10 +7,10 @@ style:
   id: ''
   class: dark text-center
 media:
-  team-image_path: /master_office_images/oregon-city-office/office.jpg
+  team-image_path: /images/trails-end-group_sm.jpg
   video_url: null
   tint_color: 'rgba(0,0,0,0.0)'
-published: false
+published: true
 ---
 
 
