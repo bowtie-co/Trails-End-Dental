@@ -25,13 +25,19 @@
 .welcome-panel{
   position: absolute;
   left: 5em;
+  right: 5em;
+  max-width: 40em;
   bottom: 8%;
   z-index: 2;
+  // Stacks under the slider on smaller screens; see .carousel-wrap override
+  // after the slider block below.
   @media screen and (max-width: 992px){
-    bottom: 5%;
-  }
-  @media screen and (max-width: 725px){
-    display: none;
+    position: static;
+    order: 2;
+    max-width: none;
+    padding: 1.5em 1em;
+    background-color: $section-alt-bg;
+    text-align: center;
   }
   .welcome-message{
     padding: 1em;
@@ -41,13 +47,20 @@
     margin-left: 0;
     p:first-child{
       color: #eee !important;
-      margin-bottom: 0;
+      margin-bottom: 0.75em;
     }
     p:last-child{
       margin-bottom: 0;
     }
     h2 {
       margin-top: 10px;
+    }
+    @media screen and (max-width: 992px){
+      margin: 0 auto 1em;
+      padding: 0;
+      max-width: 40em;
+      background-color: transparent;
+      text-align: left;
     }
   }
 }
@@ -97,10 +110,17 @@
   max-height: 600px;
   overflow: hidden;
 
-  @media screen and (min-width: 945px){
-    .slider-image{
-      transform: translateY(-12%);
-    }
+  // Banner box keeps the original 1403x655 hero ratio and breakpoint caps;
+  // any source image is center-cropped into it. max-height is inherited down
+  // slick-list > slick-track > slick-slide > img so the img itself is capped.
+  .slick-slide{
+    max-height: inherit;
+  }
+  .slider-image{
+    aspect-ratio: 1403 / 655;
+    max-height: inherit;
+    object-fit: cover;
+    object-position: center;
   }
   @media screen and (max-width: 1175px ){
     max-height: 545px;
@@ -128,5 +148,18 @@
   }
   @media screen and (max-width: 410px ){
     max-height: 170px;
+  }
+}
+// Must follow the block above to win: lets .welcome-panel flow below the
+// slider instead of being clipped by the wrapper's max-height.
+@media screen and (max-width: 992px){
+  .carousel-wrap{
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    overflow: visible;
+  }
+  .carousel-controller{
+    order: 1;
   }
 }
